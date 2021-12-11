@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+    int oddNum=0;
+    int evenNum=0;
+    
+    int temp;
+    for(int i=0;i<10;i++){
+        scanf("%d",&temp);
+        
+        if(temp%2==0){
+            if(evenNum<temp)
+                evenNum=temp;
+        }
+        else{
+            if(oddNum<temp)
+                oddNum=temp;
+        }
+    }
+    
+    if(oddNum!=0){
+        printf("%d ",oddNum);
+    }
+    if(evenNum!=0){
+        printf("%d ",evenNum);
+    }
+    return 0;
+    
+}
